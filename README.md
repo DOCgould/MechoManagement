@@ -1,5 +1,4 @@
-# Official Management for the Mechatronics Software team
--- -
+# Official Resource and Project Page for Mechatronics Software team
 -- -
 ## Purpose
 * Make Turning in Work Simple
