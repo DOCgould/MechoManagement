@@ -13,9 +13,9 @@ DUE: Sep 27th
  - [ ] Pendulum Diff EQ 
  - [ ] Physics Animation in Pygame
 ## Other Useful Resources
-[Steve Brunton's Video Lecture Series](https://www.youtube.com/watch?v=1_UobILf3cc)
-[Python version of Numerical Recipies in C](http://www-personal.umich.edu/~mejn/computational-physics/)
-[ALL THE BOOKS](https://libgen.is/)
+ * [Steve Brunton's Video Lecture Series](https://www.youtube.com/watch?v=1_UobILf3cc)
+ * [Python version of Numerical Recipies in C](http://www-personal.umich.edu/~mejn/computational-physics/)
+ * [ALL THE BOOKS](https://libgen.is/)
 ## Turning it All in
 -- -
 1. If you haven't already, download the git repo
