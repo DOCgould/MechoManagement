@@ -7,7 +7,9 @@
 
 ## Upcoming Deliverables
 **INVERTED PENDULUM**
-DUE: Sep 27th
+'''diff
+- DUE: Sep 27th
+'''
  - [ ] Pendulum Control ( PID or LQR )
  - [ ] Pendulum Diff EQ 
  - [ ] Physics Animation in Pygame
