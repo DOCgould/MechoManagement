@@ -8,7 +8,7 @@
 ## Upcoming Deliverables
 **INVERTED PENDULUM**
 ```diff
-- DUE: Sep 27th
+- DUE: Sep 21st
 ```
  - [ ] Pendulum Control ( PID or LQR )
  - [ ] Pendulum Diff EQ 
