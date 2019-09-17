@@ -16,6 +16,7 @@
 ## Other Useful Resources
  * [Steve Brunton's Video Lecture Series](https://www.youtube.com/watch?v=1_UobILf3cc)
  * [Python version of Numerical Recipies in C](http://www-personal.umich.edu/~mejn/computational-physics/)
+ * [Pendulum Simulations (not on carts) in pygame (python2.7)](https://gist.github.com/cversek/98dead0521677d0b7d4d4162715704be)
  * [ALL THE BOOKS](https://libgen.is/)
 ## Turning it All in
 -- -
