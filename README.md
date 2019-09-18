@@ -6,11 +6,14 @@
 * Make Turnover Time Shorter
 
 ## Coding Style and Formatting Guide
+
 ####For Python Code( same as last year )
 * [PEP8](https://www.python.org/dev/peps/pep-0008/)
+
 #### For C Code
 * [Linux Kernel Coding Style( only look at relevant parts please )](https://www.kernel.org/doc/html/v4.10/process/coding-style.html#linux-kernel-coding-style)
-####For GIT
+
+#### For GIT
 * [Git Workflow](https://guides.github.com/introduction/flow/)
 * [Git Ticketing](https://github.com/MichaelMure/git-bug)
 * [Commit Messages](https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53)
