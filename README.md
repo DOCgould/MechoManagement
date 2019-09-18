@@ -11,8 +11,7 @@
 * [PEP8](https://www.python.org/dev/peps/pep-0008/)
 
 #### For C Code
-* [Linux Kernel Coding Style( only look at relevant parts please )](https://www.kernel.org/doc/html/v4.10/process/coding-style.html#linux-kernel-coding-style)
-
+* [Linux Kernel Coding Style( only look at relevant parts please )](https://www.kernel.org/doc/html/v4.10/process/coding-style.html#)
 #### For GIT
 * [Git Workflow](https://guides.github.com/introduction/flow/)
 * [Git Ticketing](https://github.com/MichaelMure/git-bug)
