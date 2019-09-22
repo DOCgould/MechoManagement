@@ -1,0 +1,11 @@
+(c) SDSU MECHATRONICS LICENSE 2014
+
+    Permission is hereby granted, to any mechatronics member obtaining a copy of this software, and associated documentation files, to deal in the software with only two
+restrictions. 
+
+I. Proper recognition is always given to the creator and author of any mechatronics software, distributed under this licence. 
+
+II. This code is forever barred from distrabution to non mechatronics members, or 
+for distribution to any non-mechatronics purpose, with the exception of the codes'
+creator themselves, for whom this licence may not bar them from distributing their
+own personal software that is not distributed under this licence.
