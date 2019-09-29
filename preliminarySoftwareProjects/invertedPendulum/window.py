@@ -1,9 +1,13 @@
 import pygame
 import math
 import numpy as np
+import scipy
+
+from mathHelp import *
 
 #GLOBALS
-gravity = np.array([0, 0.002])
+gravity = -10
+d = 1
 WIDTH, HEIGHT = 1280, 720
 
 class Window:
@@ -19,8 +23,7 @@ class Window:
         pass
 
     def addObject(self, obj):
-        if isinstance(obj, Drawable):
-            self.objects.append(obj)
+        if isinstance(obj, Drawable): self.objects.append(obj)
 
     def run(self):
         running = True
@@ -37,9 +40,6 @@ class Window:
 
         self.exitEvent()
 
-class MathHelp:
-    pass
-
 class Drawable:
 
     def __init__(self, x=0, y=0, color=(0,0,255)):
@@ -53,59 +53,47 @@ class Drawable:
     def draw(self, screen):
         pass
 
-class Circle(Drawable):
+class InvertedPendulumCart(Drawable):
     
-    def __init__(self, x=0, y=0, r=1, color=(0,0,255)):
-        super(Circle, self).__init__(x, y, color)
-        self.r = r
+    def __init__(self, y, m, M, L, width, height, color=(0,0,0)):
+        self.yPos = 400
+        self.circleRadius = 5
+        self.y = y
+        self.m = m
+        self.M = M
+        self.L = L
+        self.width = width
+        self.height = height
+        self.color = color
+        t0 = 0
+        t_bound = 10000
+        fun = lambda t, y : cartpend(y, m, M, L, gravity, d, 0)
+        self.solver = scipy.integrate.RK45(fun, t0, self.y, t_bound, max_step=0.015)
 
     def act(self):
-        global gravity
-        # Apply Gravity
-        self.vel += gravity
-        self.pos += self.vel
-        if (self.pos[1] >= HEIGHT - self.r):
-            self.vel[1] = 0
-        self.pos[0] = max(0, min(WIDTH, self.pos[0]))
-        self.pos[1] = max(0, min(HEIGHT, self.pos[1]))
+        self.solver.step()
+        self.y = self.solver.y
 
     def draw(self, screen):
-        pygame.draw.circle(screen, self.color, (int(self.pos[0]), int(self.pos[1])), self.r, 1)
-
-class Cart(Drawable):
-    
-    def __init__(self, x=0, y=0, width=0, height=0, color=(0,0,0), cartMass=50, pendulumLength=100, pendulumMass=10, circleRadius=10):
-        super(Cart, self).__init__(x, y, color)
-        self.width          = width
-        self.height         = height
-        self.theta          = 90
-        self.cartMass       = cartMass
-        self.pendulumLength = pendulumLength
-        self.pendulumMass   = pendulumMass
-        self.circleRadius   = circleRadius
-
-    def act(self)
-        global gravity
-        # Apply Gravity
-        self.vel += gravity
-        # TODO Determine theta_new based on velocity
-
-        # TODO Determine position based on Forces given from pendulum
-
-    def draw(self, screen):
-        theta     = math.radians(self.theta)
-        endPointx = int(math.cos(theta)*self.pendulumLength + self.pos[0] + self.width/2)
-        endPointy = int(self.pos[1] - math.sin(theta)*self.pendulumLength)
-        pygame.draw.rect(screen, self.color, (int(self.pos[0]), int(self.pos[1]), 
+        theta     = self.y[2]
+        endPointx = int(math.sin(theta)*self.L + self.y[0] + self.width/2)
+        endPointy = int(self.yPos + math.cos(theta)*self.L)
+        pygame.draw.rect(screen, self.color, (int(self.y[0]), int(self.yPos), 
                             self.width, self.height))
-        pygame.draw.line(screen, self.color, (int(self.pos[0] + self.width/2), int(self.pos[1])),
+        pygame.draw.line(screen, self.color, (int(self.y[0] + self.width/2), int(self.yPos)),
                             (endPointx, endPointy), 3)
         pygame.draw.circle(screen, self.color, (endPointx, endPointy), self.circleRadius)
 
 def main():
     window = Window("Inverted Pendulum")
-    width, height = 100,100
-    window.addObject(Cart((WIDTH - width)/2, HEIGHT-height, width, height, pendulumLength=200))
+    width, height = 50,50
+    # Constants for the inverted pendulum
+    m = 1
+    M = 5
+    L = 60
+    y = np.array([500, 0, np.pi, .5])
+
+    window.addObject(InvertedPendulumCart(y, m, M, L, width, height))
     window.run()
 
 if __name__ == "__main__":
