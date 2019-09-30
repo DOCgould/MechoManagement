@@ -40,16 +40,17 @@
     * numpy
     * control( fine, but see if it exists in the above first )
     * nobody wants to install yet *MORE* dependencies on my computer thanks ( management )
+
 **GigE Vision Driver**
 ```diff
 - due October 12th
 ```
 **Linux Config(RTOS)**
-```
+```diff
 - due: October 12th
 ```
 **C/C++ Software Exam**
-```
+```diff
 - due: October 19th
 ```
 ## Other Useful Resources
