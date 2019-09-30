@@ -18,18 +18,43 @@
 * [Commit Messages](https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53)
 * [Adding issuenumbers(refs)](https://guides.github.com/features/issues/) 
 (This Will Be Continuously updated, but this should be a basis for now)
-## Upcoming Deliverables
-**INVERTED PENDULUM**
+## completed deliverables
+ - [x] inverted pendulum( pygame )
+
+## upcoming deliverables
+**Quadrotor LQR Controller ( pygame )**
 ```diff
-- DUE: Sep 21st
+- due: oct 12-24th
 ```
- - [ ] Pendulum Control ( PID or LQR )
- - [ ] Pendulum Diff EQ 
- - [ ] Physics Animation in Pygame
+ - [ ] Python Based Controller ( pid or lqr )
+    * Must be simulated with pygame ( experimental points for doing it with blender )
+    * Must Indicate Equations of Motion( Latex is Optimal )
+
+ - [ ] Can be in C++/C
+    * Using C++11/C99
+    * Must be Ported to Python
+    * Must be Easy to use and Well Document( see above for details )
+
+ - [ ] Python Optimization Libraries are allowed
+    * scipy
+    * numpy
+    * control( fine, but see if it exists in the above first )
+    * nobody wants to install yet *MORE* dependencies on my computer thanks ( management )
+**GigE Vision Driver**
+```diff
+- due October 12th
+```
+**Linux Config(RTOS)**
+```
+- due: October 12th
+```
+**C/C++ Software Exam**
+```
+- due: October 19th
+```
 ## Other Useful Resources
  * [Steve Brunton's Video Lecture Series](https://www.youtube.com/watch?v=1_UobILf3cc)
  * [Python version of Numerical Recipies in C](http://www-personal.umich.edu/~mejn/computational-physics/)
- * [Pendulum Simulations (not on carts) in pygame (python2.7)](https://gist.github.com/cversek/98dead0521677d0b7d4d4162715704be)
  * [ALL THE BOOKS](https://libgen.is/)
 ## Turning it All in
 -- -
