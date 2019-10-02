@@ -71,6 +71,20 @@
 3. Create a Directory with your name **firstnameLastname** *(camelcase)*
 4. Upload your Files Before the Deadline
 
+## How to Pull Changes from Master onto your Current Branch
+1. Check and see what branch you are on
+```bash
+git status
+```
+2. If you are not on the branch you're trying to merge into, switch to that branch
+```bash
+git checkout dev/yournamehere
+```
+3. now that you are on the correct branch, Merge from Master
+```
+git merge origin/master
+```
+
 ## How to Reference a Ticket in Your Commits
 1. If you haven't already done so, please try out [git-bug](https://github.com/MichaelMure/git-bug)
 2. When you want to reference a particular ticket, simply #(ticketnumber)
