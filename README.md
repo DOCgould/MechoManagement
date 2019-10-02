@@ -71,3 +71,7 @@
 3. Create a Directory with your name **firstnameLastname** *(camelcase)*
 4. Upload your Files Before the Deadline
 
+## How to Reference a Ticket in Your Commits
+1. If you haven't already done so, please try out [git-bug](https://github.com/MichaelMure/git-bug)
+2. When you want to reference a particular ticket, simply #(ticketnumber)
+3. Example: I can Reference the Pendulum Deliverable #6 like so
