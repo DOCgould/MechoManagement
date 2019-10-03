@@ -1,4 +1,8 @@
 # Official Resource and Project Page for Mechatronics Software team
+
+>In preparing for battle I have always found that plans are useless, but planning is indispensable.
+-- Dwight D. Eisenhower
+
 -- -
 ## Purpose
 * Make Turning in Work Simple
