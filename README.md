@@ -153,7 +153,7 @@ git merge origin/master
     ```
      Name of Build Tarball instead of 'PackageName'
      ```bash
-    pip install PackageName-1.0
+    pip install spammodule-1.0
      ```
 4. utilize [twine](https://pypi.org/project/twine/) for upload to pypi community
 
