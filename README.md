@@ -89,6 +89,74 @@ git checkout dev/yournamehere
 git merge origin/master
 ```
 
+## Build Flow
+#### From source to Module
+1. Create CPython Source Files
+    ```C
+    '''
+    This is the  spammodule, it does nothing but show an example
+    '''
+    #include <Python.h>
+    
+    static PyObject * spam_system(PyObject *self, PyObject *args){
+        const char *command;
+        int sts;
+    
+        if (!PyArg_ParseTuple(args, "s", &command))
+            return NULL;
+        sts = system(command);
+        return PyLong_FromLong(sts);
+    }
+    
+    static PyMethodDef SpamMethods[] = {
+        {"system",  spam_system, METH_VARARGS,
+         "Execute a shell command."},
+        {NULL, NULL, 0, NULL}        /* Sentinel */
+    };
+    
+    static struct PyModuleDef spammodule = { PyModuleDef_HEAD_INIT,
+                                             "spam", /* name of module */
+                                             NULL,   /* module documentation, may be NULL */
+                                             -1,     /* size of per-interpreter state of the module,
+                                                        or -1 if the module keeps state in global variables. */
+                                             SpamMethods};
+    
+    PyMODINIT_FUNC PyInit_spam(void){
+        PyObject *m;
+        
+        m = PyModule_Create(&spammodule);
+        if (m == NULL)
+            return NULL;
+    
+        return m;
+    }
+    
+    ```
+    (a) Using [setup.py](https://docs.python.org/3/extending/building.html#building) for buildinfo
+    ```python
+    from distutils.core import setup, Extension
+
+    spam = Extension('spam', sources = ['spammodule.c'])
+
+    setup (name = 'spammodule',
+               version = '1.0',
+                      description = 'This is a demo package',
+                             ext_modules = [spam])
+    ```
+2. Create the build files from CPython Source
+    ```bash
+    python setup.py build
+    ```
+3. (Alternative) Create the Source Tarball
+    ```bash
+    python3 setup.py sdist
+    ```
+     Name of Build Tarball instead of 'PackageName'
+     ```bash
+    pip install PackageName-1.0
+     ```
+4. utilize [twine](https://pypi.org/project/twine/) for upload to pypi community
+
 ## How to Reference a Ticket in Your Commits
 1. If you haven't already done so, please try out [git-bug](https://github.com/MichaelMure/git-bug)
 2. When you want to reference a particular ticket, simply #(ticketnumber)
