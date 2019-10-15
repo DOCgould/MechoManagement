@@ -2,14 +2,20 @@ import numpy as np
 import scipy as sp
 
 def feval(funcName, *args):
+    """returns evaluation of the function
+    """
     return eval(funcName)(*args)
 
 def HeunsMethod(func, y_vec, h, *args):
+    """Returns a single step h of the integrated function, func
+    """
     predictor = y_vec + h*eval(func)(y_vec, *args)
     corrector = y_vec + (h/2)*(eval(func)(y_vec, *args) + eval(func)(predictor, *args) )
     return corrector
 
 def equations_of_motion( y_vec, m, M, L, g, d , control=0):
+    """Returns the evaluation of y_vec with the equations of motion
+    """
     dy = np.zeros([4,1])
     Sy = np.sin(y_vec[2][0]);
     Cy = np.cos(y_vec[2][0]);

@@ -5,9 +5,13 @@ def schur(matrix, **kwargs):
     return eval('la.schur')(matrix, **kwargs)
 
 def inv(matrix, **kwargs):
+    """Returns the inverse of matrix
+    """
     return eval('np.linalg.inv')(matrix, **kwargs)
 
 def multi_dot(*args):
+    """Returns the optimal matrix multiplication of *args
+    """
     return eval('np.linalg.multi_dot')([*args])
 
 def solve_ricatti_equation(S, A, B, Q, R):
@@ -15,7 +19,8 @@ def solve_ricatti_equation(S, A, B, Q, R):
     #return la.solve(A.T.dot(S) + S.dot(A) - np.linalg.multi_dot([S, B, inv(R), B.T, S]) + Q, np.eye(4))
 
 def CARE(A, B, Q, R):
-    '''
+    '''Returns optimal K matrix
+    
     For Visualization Purposes Only
     
     Otherwise We should make an (n x n) matrix
