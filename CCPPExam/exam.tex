@@ -1,0 +1,172 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{fullpage}
+\usepackage[top=2cm, bottom=4.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\hypersetup{%
+  colorlinks=true,
+  linkcolor=blue,
+  linkbordercolor={0 0 1}
+}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% }
+
+%%%%%%%%%%%%%%%%%%%%%%%% CHANGE HERE %%%%%%%%%%%%%%%%%%%% {
+\newcommand\course{Mechatronics}
+\newcommand\semester{Fall 2019}
+\newcommand\hwnumber{}                 % <-- ASSIGNMENT #
+\newcommand\NetIDa{Your Name: }           % <-- YOUR NAME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% }
+
+%%%%%%%%%%%%%%%%% DO NOT CHANGE HERE %%%%%%%%%%%%%%%%%%%% {
+\pagestyle{fancyplain}
+\headheight 35pt
+\lhead{\NetIDa}
+\lhead{\NetIDa}                 
+\chead{\textbf{\Large C/C++ Examination \hwnumber}}
+\rhead{\course}
+\lfoot{}
+\cfoot{}
+\rfoot{\small\thepage}
+\headsep 1.5em
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% }
+
+\lstset { %
+    language=C++,
+    backgroundcolor=\color{white}, % set backgroundcolor
+    basicstyle=\footnotesize,% basic font setting
+}
+
+
+%\title{C/C++ Exam}
+
+\begin{document}
+
+\begin{enumerate}
+    \item Correct the error(s) in the following code:
+    
+    \begin{lstlisting}
+#include <stdio.h>
+#include <stdlib.h>
+
+void fun(int* ptr) {
+    int i = 0;
+    int j = 0;
+    int arrSize = 4;
+    ptr = (int*) malloc(sizeof(int) * arrSize);
+    
+    for (i = 0; i < arrSize; i++) {
+        ptr[i] = 1;
+        for (j =0; j < arrSize; j++) {
+            ptr[i % (j+1)] *= arrSize + ptr[i] - ptr[j];
+        }
+    }
+}
+
+int main() {
+    int* data;
+    fun(data);
+    printf("The first element of the list is %i\n", *data);
+    free(data);
+}
+
+    \end{lstlisting}
+    
+    \item Correct the error(s) in the following code:
+    \begin{lstlisting}
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Node {
+    struct Node* next;
+    int val;
+};
+
+void prependNode(struct Node** head, struct Node* newNode) {
+    newNode.next = *head;
+    *head = newNode;
+}
+
+void cleanupList(struct Node* head) {
+    if (head == NULL)
+        return;
+    cleanupList(head.next);
+    free(head);
+}
+
+int main() {
+    struct Node* root = malloc(sizeof(struct Node));
+    for (int i = 0; i < 17; i++) {
+        struct Node* node = malloc(sizeof(struct Node));
+        node.val = i*i;
+        prependNode(&root, node);
+        printf("%i\n", root.val);
+    }
+
+    cleanupList(root);
+}
+    \end{lstlisting}
+    
+    \item What does the following code output:
+    
+    \begin{lstlisting}
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+static constexpr int SIZE = 5;
+
+int main() {
+    vector<int> vec;
+    for (int i = 0; i <= SIZE; i++) {
+        vec.emplace_back(i);
+    }
+
+    cout << vec[0] << endl;
+    for (int i = 1; i < SIZE; i++) {
+        vec[i] = 2*vec[i-1] + vec[i];
+        cout << vec[i] << endl;
+    }
+}
+
+    \end{lstlisting}
+    
+    \item Why should you \textbf{never} use the using namespace statement in a header file?
+    
+    \vspace{20mm}
+    
+    \item What is the function of \textbf{constexpr} and why is it better to use than \textbf{\#define}?
+    
+    \vspace{20mm}
+    
+    \item Given the vector2 ctypes structure defined in python, create a structure utilizing this called Matrix2by2.
+    
+    \lstset{language=python}
+    \begin{lstlisting}
+    from ctypes import *
+
+    class VECTOR2(Structure):
+        _fields_ = [("x1", c_int), ("x2", c_int)]
+        
+    \end{lstlisting}
+    
+    \vspace{20mm}
+    
+    \item Write a program that takes in three variables $a,b,c$ and finds the coefficients of the following multivariate polynomial $(ax + by + cz)^3$ with variables $x, y, z$.  Hint: Start with 
+    $(ax+by+cz)^2$.  For bonus points, extend this to $(ax+by+cz)^n$.
+    
+\end{enumerate}
+
+\end{document}
+
