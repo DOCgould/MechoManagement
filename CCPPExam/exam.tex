@@ -150,7 +150,16 @@ int main() {
     
     \vspace{20mm}
     
-    \item What is the ctypes library and when would you want to use it?
+    \item Given the vector2 ctypes structure defined in python, create a structure utilizing this called Matrix2by2.
+    
+    \lstset{language=python}
+    \begin{lstlisting}
+    from ctypes import *
+
+    class VECTOR2(Structure):
+        _fields_ = [("x1", c_int), ("x2", c_int)]
+        
+    \end{lstlisting}
     
     \vspace{20mm}
     
