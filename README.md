@@ -1,6 +1,6 @@
 # Course List ( General )
 
-### [Introduction](https://youtu.be/rrzh3jpKfsM) ( Module 1 ) Week ( 1-2 )
+### [Introduction](https://youtu.be/5F0ppPCUX60) ( Module 1 ) Week ( 1-2 )
   1. Understanding the [standard python library](https://docs.python.org/3/library/)
   2. How to install linux-live to a [USB thumb drive](https://itsfoss.com/create-live-usb-of-ubuntu-in-windows/)
   3. How to install ubuntu linux from live usb thumb drive [to another USB drive](https://www.tecmint.com/install-linux-os-on-usb-drive/)
