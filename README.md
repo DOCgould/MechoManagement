@@ -1,6 +1,12 @@
 # Course List ( General )
 
-### [Introduction](https://youtu.be/5F0ppPCUX60) ( Module 1 ) Week ( 1-2 )
+### Disclaimer
+>This year is the first year we have ever tried something like this; I won't lie it's going to be pretty bumpy. Nobody on this team is a teacher by trade, we're all students here. The idea is to pass forward
+everything we know about robotics, and everything we have learned while on this team. In some videos
+there might not be enough information, and it will have to be replaced with more thorough ones, or the links to some useful media, might be confusing or too full of adds, and replaced with better ones. We are all in this together though, and are always willing to listen to feedback. If you see something incorrect, or in need of update, please bring this to the leads, and we will fix it. Thanks guys!
+
+
+### [Introduction](https://youtu.be/5F0ppPCUX60 "Module 1") ( Module 1 ) Week ( 1-2 )
   1. Understanding the [standard python library](https://docs.python.org/3/library/)
   2. How to install linux-live to a [USB thumb drive](https://itsfoss.com/create-live-usb-of-ubuntu-in-windows/)
   3. How to install ubuntu linux from live usb thumb drive [to another USB drive](https://www.tecmint.com/install-linux-os-on-usb-drive/)
