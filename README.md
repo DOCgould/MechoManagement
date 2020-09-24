@@ -14,25 +14,29 @@ there might not be enough information, and it will have to be replaced with more
 
 
 ### Common to Python Libraries ( Module 2) Week (2 - 3)
-> Libraries that you will use often in python, no matter what you're working on
+> Things that you will use often in python, no matter what you're working on
 
   - Subprocess
   - Argparse
-  - collection
   - Shlex
-  - abc
-  - BytesIO
+  - collection
+  - io
+  - time
+  - os
+  - cmd
 
 ### Data Flow  ( Module 3 ) Week (3 - 4)
 > If you need to do something with multiple programs, this is the place to do it
 
+#### Concurrency
   - Threading
   - AsyncIO
+  - Select
   - Multiprocessing
-
-  - Socket
-  - Pipes
-  - MemoryMapping
+#### IPC
+  - socket
+  - select
+  - mmap
 
   - Tkinter
 
@@ -51,7 +55,6 @@ there might not be enough information, and it will have to be replaced with more
 > this will make setting up system-wide stuff much easier
 
  - Intro to Daemons
- - Intro to IPC
  - Intro to Logging
 
 ### Service Isolation ( 5 - 6 )
