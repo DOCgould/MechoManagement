@@ -7,9 +7,10 @@ there might not be enough information, and it will have to be replaced with more
 
 
 ### [Introduction](https://youtu.be/5F0ppPCUX60 "Module 1") ( Module 1 ) Week ( 1-2 )
-  1. Understanding the [standard python library](https://docs.python.org/3/library/)
-  2. How to install linux-live to a [USB thumb drive](https://itsfoss.com/create-live-usb-of-ubuntu-in-windows/)
-  3. How to install ubuntu linux from live usb thumb drive [to another USB drive](https://www.tecmint.com/install-linux-os-on-usb-drive/)
+  1. Understanding the [python programming language](https://docs.python.org/3/reference/index.html#reference-index)
+  2. Understanding the [standard python library](https://docs.python.org/3/library/)
+  3. How to install linux-live to a [USB thumb drive](https://itsfoss.com/create-live-usb-of-ubuntu-in-windows/)
+  4. How to install ubuntu linux from live usb thumb drive [to another USB drive](https://www.tecmint.com/install-linux-os-on-usb-drive/)
 
 
 ### Common to Python Libraries ( Module 2) Week (2 - 3)
@@ -21,34 +22,40 @@ there might not be enough information, and it will have to be replaced with more
   - Shlex
   - abc
   - BytesIO
-  - crcmod
-  - pyserial
 
-### Data Flow
+### Data Flow  ( Module 3 ) Week (3 - 4)
 > If you need to do something with multiple programs, this is the place to do it
 
   - Threading
   - AsyncIO
   - Multiprocessing
 
+  - Socket
+  - Pipes
+  - MemoryMapping
+
   - Tkinter
 
-### Data Science
+### Data Science ( Module 4) Week ( 4 - 5 )
+> You want to know python well enought that you don't need to use other programms to do the same stuff
  - Scipy
  - Numpy
  - Matplotlib
  - OpenCV
  - Pygame
- - Pandas
 
  - Tkinter
 
-### Linux, an introduction
+### Linux, an introduction ( 5 - 6 )
+> Knowing these thigns will make your life easier when working on a linux based submarine
+> this will make setting up system-wide stuff much easier
 
  - Intro to Daemons
+ - Intro to IPC
  - Intro to Logging
 
-### Service Isolation
+### Service Isolation ( 5 - 6 )
+> Often we need Processes to do their own thing - this is great for modularization
 
  - Docker
 
