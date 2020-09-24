@@ -12,28 +12,45 @@ there might not be enough information, and it will have to be replaced with more
   3. How to install ubuntu linux from live usb thumb drive [to another USB drive](https://www.tecmint.com/install-linux-os-on-usb-drive/)
 
 
-### Multi Flow ( Collecting information from Sensors ) ( Module 2) Week (2 - 3)
-  1. Threading
-  2. Asyncio
-  3. Multiprocessing
+### Common to Python Libraries ( Module 2) Week (2 - 3)
+> Libraries that you will use often in python, no matter what you're working on
 
-### Flow with maths and Apps ( Module 3 ) Week ( 3 - 4 )
-  1. Matplotlib and numpy 
-  2. Pygtk
-  3. Curses
+  - Subprocess
+  - Argparse
+  - collection
+  - Shlex
+  - abc
+  - BytesIO
+  - crcmod
+  - pyserial
 
+### Data Flow
+> If you need to do something with multiple programs, this is the place to do it
 
-### Services ( Flows that never die ) ( Module 4 ) ( 4 -5 )
-  1. Subprocess services that start on command
-  2. Subprocess services that control systemd
-  3. Starting and Stopping Services at Boot
+  - Threading
+  - AsyncIO
+  - Multiprocessing
 
+  - Tkinter
 
-### Service Isolation ( Module 5 )
-  1. Using Systemd-nspawn to make Isolated Systems
-  2. Using Dockerd to make isolated systems
-  3. Using KVM containers to make isolated systems
+### Data Science
+ - Scipy
+ - Numpy
+ - Matplotlib
+ - OpenCV
+ - Pygame
+ - Pandas
 
+ - Tkinter
+
+### Linux, an introduction
+
+ - Intro to Daemons
+ - Intro to Logging
+
+### Service Isolation
+
+ - Docker
 
 #### References:
 [MIT - Computer Engineering 101 ](https://www.youtube.com/redirect?redir_token=QUFFLUhqbS1CSjQzai1Hb21TZTk2cy1aazcxMkF5N19td3xBQ3Jtc0ttUjQ2Nnc0d0JFWU5tTDhDVUpaYWtnbUZFVHNuel9xNGNCckVtYjUtcHJ0bEVMVEl6c0stc0ZpMDREMkpoamgtbDBGaV9kM1JfVW5VdHFKSHBDYVFvMXN2ZjN4eVI2NzJXSGtqTDhKOUxnVWVtQ2x1VQ%3D%3D&q=http%3A%2F%2Focw.mit.edu%2F6-01SCS11&event=playlist_description "MIT PAGE")[Youtube - Playlist](https://www.youtube.com/playlist?list=PL9B24A6A9D5754E70 "The Mit Youtube Playlist")
