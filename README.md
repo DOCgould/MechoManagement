@@ -25,6 +25,10 @@ there might not be enough information, and it will have to be replaced with more
   - os
   - cmd
 
+#### Videos
+  - [Part-1](https://www.youtube.com/watch?v=10N-uh97E-4&feature=youtu.be "Module 2 Part 1")
+  - [Part-2](https://www.youtube.com/watch?v=R_bEF1qXcPY&feature=youtu.be "Module 2 Part 2")
+
 ### Data Flow  ( Module 3 ) Week (3 - 4)
 > If you need to do something with multiple programs, this is the place to do it
 
@@ -38,18 +42,17 @@ there might not be enough information, and it will have to be replaced with more
   - socket
   - select
   - mmap
-
-  - Tkinter
+  - Tkinter ( gtk )
 
 ### Data Science ( Module 4) Week ( 4 - 5 )
 > You want to know python well enought that you don't need to use other programms to do the same stuff
+
  - Scipy
  - Numpy
  - Matplotlib
  - OpenCV
  - Pygame
-
- - Tkinter
+ - Tkinter ( gtk )
 
 ### Linux, an introduction ( 5 - 6 )
 > Knowing these thigns will make your life easier when working on a linux based submarine
