@@ -26,7 +26,7 @@ there might not be enough information, and it will have to be replaced with more
   - cmd
 
 #### Videos
-  - [Part-1](https://www.youtube.com/watch?v=10N-uh97E-4&feature=youtu.be "Module 2 Part 1")
+  - [Part-1](https://www.youtube.com/watch?v=U0KnCRzuFT4&feature=youtu.be "Module 2 Part 1")
   - [Part-2](https://www.youtube.com/watch?v=R_bEF1qXcPY&feature=youtu.be "Module 2 Part 2")
 
 ### Data Flow  ( Module 3 ) Week (3 - 4)
