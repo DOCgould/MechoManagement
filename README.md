@@ -35,24 +35,35 @@ there might not be enough information, and it will have to be replaced with more
 #### Concurrency
   - Threading
   - AsyncIO
-  - Select
   - Multiprocessing
 
 #### IPC
-  - socket
-  - select
-  - mmap
-  - Tkinter ( gtk )
+  - Socket
+  - Select
+  - Mmap
+  - Named Pipes
+  - Queues
 
-### Data Science ( Module 4) Week ( 4 - 5 )
+
+### Data Science and Structure ( Module 4) Week ( 3 - 4 )
 > You want to know python well enought that you don't need to use other programms to do the same stuff
 
+#### Mathematics Tools
  - Scipy
  - Numpy
  - Matplotlib
+
+#### Video and Image Manipulation
  - OpenCV
+ - TensorFlow
+
+#### Simulation Tools
  - Pygame
- - Tkinter ( gtk )
+
+### State Machines ( 4 - 5 ) 
+ - State Machines Intro
+ - Cascade, Parallel, Select ( Managing State Machines )
+ - Complex Structures with State Machines
 
 ### Linux, an introduction ( 5 - 6 )
 > Knowing these thigns will make your life easier when working on a linux based submarine
