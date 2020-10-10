@@ -37,6 +37,9 @@ there might not be enough information, and it will have to be replaced with more
   - AsyncIO
   - Multiprocessing
 
+#### Videos
+  - [Intro](https://www.youtube.com/watch?v=rN34kCmhhas "Concurrency and Parallelism")
+
 #### IPC
   - Socket
   - Select
