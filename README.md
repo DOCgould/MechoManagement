@@ -63,6 +63,16 @@ there might not be enough information, and it will have to be replaced with more
 #### Simulation Tools
  - Pygame
 
+#### Videos
+- [Matplotlib Playlist](https://www.youtube.com/playlist?list=PL-osiE80TeTvipOqomVEeZ1HRrcEvtZB_)
+- [Tensorflow Playlist](https://www.youtube.com/watch?v=HPjBY1H-U4U&list=PLhhyoLH6IjfxVOdVC1P1L5z5azs0XjMsb&index=2)
+
+#### Projects
+- [A Practical Introduction to Using Python Like Matlab](https://drive.google.com/file/d/1ch0Yufd2JSYKJEke7zFFrPZvLU0ypD5m/view?usp=sharing)
+- [A Practical Introduction to Matlab ( Reference Tutorial Link )](https://pages.mtu.edu/~msgocken/intro/intro.html)
+- [Pygame Project](https://drive.google.com/file/d/1M5E4o6qhErVM7ZKtfi4NjXhPyGohShD1/view?usp=sharing)
+- [Peter Collinggridge ( Reference Tutorial Link )](http://www.petercollingridge.co.uk/tutorials/pygame-physics-simulation/)
+
 ### State Machines ( 4 - 5 ) 
  - State Machines Intro
  - Cascade, Parallel, Select ( Managing State Machines )
@@ -82,4 +92,5 @@ there might not be enough information, and it will have to be replaced with more
 
 #### References:
 [MIT - Computer Engineering 101 ](https://www.youtube.com/redirect?redir_token=QUFFLUhqbS1CSjQzai1Hb21TZTk2cy1aazcxMkF5N19td3xBQ3Jtc0ttUjQ2Nnc0d0JFWU5tTDhDVUpaYWtnbUZFVHNuel9xNGNCckVtYjUtcHJ0bEVMVEl6c0stc0ZpMDREMkpoamgtbDBGaV9kM1JfVW5VdHFKSHBDYVFvMXN2ZjN4eVI2NzJXSGtqTDhKOUxnVWVtQ2x1VQ%3D%3D&q=http%3A%2F%2Focw.mit.edu%2F6-01SCS11&event=playlist_description "MIT PAGE")[Youtube - Playlist](https://www.youtube.com/playlist?list=PL9B24A6A9D5754E70 "The Mit Youtube Playlist")
+
 
