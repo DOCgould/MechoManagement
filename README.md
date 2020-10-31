@@ -90,6 +90,10 @@ there might not be enough information, and it will have to be replaced with more
 
  - Docker
 
+### Videos
+[Part 1: Intro]("https://www.youtube.com/watch?v=h-5SQcctun0&list=PLJtm2YNbaY4_1IWLMJk2Fu-AA-Q_pruEv&index=1")
+[Part 2: Provisioning Containers]("https://www.youtube.com/watch?v=IhUPZFSlnSU&list=PLJtm2YNbaY4_1IWLMJk2Fu-AA-Q_pruEv&index=2")
+
 #### References:
 [MIT - Computer Engineering 101 ](https://www.youtube.com/redirect?redir_token=QUFFLUhqbS1CSjQzai1Hb21TZTk2cy1aazcxMkF5N19td3xBQ3Jtc0ttUjQ2Nnc0d0JFWU5tTDhDVUpaYWtnbUZFVHNuel9xNGNCckVtYjUtcHJ0bEVMVEl6c0stc0ZpMDREMkpoamgtbDBGaV9kM1JfVW5VdHFKSHBDYVFvMXN2ZjN4eVI2NzJXSGtqTDhKOUxnVWVtQ2x1VQ%3D%3D&q=http%3A%2F%2Focw.mit.edu%2F6-01SCS11&event=playlist_description "MIT PAGE")[Youtube - Playlist](https://www.youtube.com/playlist?list=PL9B24A6A9D5754E70 "The Mit Youtube Playlist")
 
