@@ -82,8 +82,8 @@ there might not be enough information, and it will have to be replaced with more
 > Knowing these thigns will make your life easier when working on a linux based submarine
 > this will make setting up system-wide stuff much easier
 
- - Intro to Daemons
- - Intro to Logging
+ - [Intro to Daemons](https://www.youtube.com/watch?v=fYQBvjYQ63U)
+ - [Intro to Logging](https://www.youtube.com/watch?v=DxZ5WEo4hvU)
 
 ### Service Isolation ( 5 - 6 )
 > Often we need Processes to do their own thing - this is great for modularization
