@@ -12,6 +12,8 @@ there might not be enough information, and it will have to be replaced with more
   3. How to install linux-live to a [USB thumb drive](https://itsfoss.com/create-live-usb-of-ubuntu-in-windows/)
   4. How to install ubuntu linux from live usb thumb drive [to another USB drive](https://www.tecmint.com/install-linux-os-on-usb-drive/)
 
+#### Videos
+- [Python3 Beginner Tutorials](https://www.youtube.com/playlist?list=PL1A2CSdiySGJd0LJRRSwQZbPZaDP0q67j)
 
 ### Common to Python Libraries ( Module 2) Week (2 - 3)
 > Things that you will use often in python, no matter what you're working on
@@ -39,6 +41,8 @@ there might not be enough information, and it will have to be replaced with more
 
 #### Videos
   - [Intro](https://www.youtube.com/watch?v=rN34kCmhhas "Concurrency and Parallelism")
+  - [Python3 Intermediate Programming Playlist](https://www.youtube.com/playlist?list=PL1A2CSdiySGLPTXm0cTxlGYbReGqTcGRA)
+
 
 #### IPC
   - Socket
