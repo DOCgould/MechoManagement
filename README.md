@@ -94,7 +94,7 @@ there might not be enough information, and it will have to be replaced with more
 
  - Docker
 
-### Videos
+#### Videos
  - [Part 1: Intro](https://www.youtube.com/watch?v=h-5SQcctun0&list=PLJtm2YNbaY4_1IWLMJk2Fu-AA-Q_pruEv&index=1)
  - [Part 2: Provisioning Containers](https://www.youtube.com/watch?v=IhUPZFSlnSU&list=PLJtm2YNbaY4_1IWLMJk2Fu-AA-Q_pruEv&index=2)
 
@@ -103,6 +103,9 @@ there might not be enough information, and it will have to be replaced with more
 ### Python Language Optimization
  - Integrating C and Python
  - Extending C and Python
+
+#### Videos
+ - [Intro on Integrating Python and C with C extension Modules](https://www.youtube.com/watch?v=l8dRF_AnFE0)
 
 ### Control Systems
  - Controllability
